@@ -357,9 +357,9 @@ html{font-size: 100px;}
 .ispay .sure{
 	background-color: #183765;
 	color: #fff;
-	padding: 0.02rem 0.25rem;
+	padding: 0.05rem 0.25rem;
 	font-size: 0.12rem;
-	margin-top: 0.15rem;
+	margin-top: 0.07rem;
 }
 .prompts{
 	width: 90%;
