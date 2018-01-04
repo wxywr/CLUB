@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+	<meta name="applicable-device" content="mobile">
+	<title>选座购票</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="sitbg">
+		<img src="img/seat-bg.png" alt="">
+	</div>
+	<div class="sit-wrap hid">
+		<ul class="fl left">
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+		</ul>
+		<div class="fr right">
+			<ul class="obj">
+				<li class="sit-a">
+					<input type="checkbox" value="1a1" class="a row" name="check" id="site_1a1"><i class="a"></i>
+					<input type="checkbox" value="1a2" class="b row" name="check" id="site_1a2"><i class="b"></i>
+					<input type="checkbox" value="1a3" class="c row" name="check" id="site_1a3"><i class="c"></i>
+					<input type="checkbox" value="1a4" class="d row" name="check" id="site_1a4"><i class="d"></i>
+					<input type="checkbox" value="1a5" class="e row" name="check" id="site_1a5"><i class="e"></i>
+					<input type="checkbox" value="1a6" disabled="" class="f row" name="check" id="site_1a6"><i class="f" style="background: url(img/a.png) no-repeat;background-position: center;background-size: 90%;"></i>
+					<input type="checkbox" value="1a7" class="g row" name="check" id="site_1a7"><i class="g"></i>
+					<input type="checkbox" value="1a8" class="h row" name="check" id="site_1a8"><i class="h"></i>
+					<input type="checkbox" value="1a9" class="i row" name="check" id="site_1a9"><i class="i"></i>
+					<input type="checkbox" value="1a10" class="j row" name="check" id="site_1a10"><i class="j"></i>
+				</li>
+				<li class="sit-b">
+					<input type="checkbox" value="2a1" class="a row" name="check" id="site_2a1"><i class="a"></i>
+					<input type="checkbox" value="2a2" class="b row" name="check" id="site_2a2"><i class="b"></i>
+					<input type="checkbox" value="2a3" class="c row" name="check" id="site_2a3"><i class="c"></i>
+					<input type="checkbox" value="2a4" class="d row" name="check" id="site_2a4"><i class="d"></i>
+					<input type="checkbox" value="2a5" class="e row" name="check" id="site_2a5"><i class="e"></i>
+					<input type="checkbox" value="2a6" class="f row" name="check" id="site_2a6"><i class="f"></i>
+					<input type="checkbox" value="2a7" class="g row" name="check" id="site_2a7"><i class="g"></i>
+					<input type="checkbox" value="2a8" class="h row" name="check" id="site_2a8"><i class="h"></i>
+					<input type="checkbox" value="2a9" class="i row" name="check" id="site_2a9"><i class="i"></i>
+					<input type="checkbox" value="2a10" class="j row" name="check" id="site_2a10"><i class="j"></i>
+				</li>
+				<li class="sit-c">
+					<input type="checkbox" value="3a1" class="a row" name="check" id="site_3a1"><i class="a"></i>
+					<input type="checkbox" value="3a2" class="b row" name="check" id="site_3a2"><i class="b"></i>
+					<input type="checkbox" value="3a3" class="c row" name="check" id="site_3a3"><i class="c"></i>
+					<input type="checkbox" value="3a4" class="d row" name="check" id="site_3a4"><i class="d"></i>
+					<input type="checkbox" value="3a5" class="e row" name="check" id="site_3a5"><i class="e"></i>
+					<input type="checkbox" value="3a6" class="f row" name="check" id="site_3a6"><i class="f"></i>
+					<input type="checkbox" value="3a7" class="g row" name="check" id="site_3a7"><i class="g"></i>
+					<input type="checkbox" value="3a8" class="h row" name="check" id="site_3a8"><i class="h"></i>
+					<input type="checkbox" value="3a9" class="i row" name="check" id="site_3a9"><i class="i"></i>
+					<input type="checkbox" value="3a10" class="j row" name="check" id="site_3a10"><i class="j"></i>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="notes">
+		<i class="can"></i>可选&nbsp;&nbsp; <i class="sell"></i>已售&nbsp;&nbsp; <i class="pick"></i>已选
+	</div>
+	<div class="sitOk">
+		<p class="yx">已选座位</p>
+		<div class="addSit">
+			<!-- <div>1排5座<i></i></div> -->
+		</div>
+		<input type="button" value="请先选座" class="sure" disabled="">
+	</div>
+	<div class="alert">一次最多购买4张票</div>
+</body>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</html>

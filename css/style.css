@@ -1,0 +1,893 @@
+body,ul,ol,p,h1,h2,h3,h4,h5,dl,dd,form,input,textarea,
+td,th,button,strong,em,select,video,canvas{margin:0;padding:0;}
+li{list-style:none;}
+table{ border-collapse:collapse;}
+textarea{resize:none;overflow:auto;}
+img{ border:none; vertical-align:middle;max-width: 100%;display: block;}
+em{ font-style:normal;}
+a{ text-decoration:none;}
+a,input{/*-webkit-appearance: none;*/-webkit-tap-highlight-color:rgba(0,0,0,0);}
+input{outline: none;}
+a, img {-webkit-touch-callout: none;}
+html, body {-webkit-user-select: none;user-select: none; position: relative; height: 100%;}
+body{font-family: "Helvetica Neue", Helvetica, "STHeiTi", sans-serif; overflow-x:hidden; overflow-y:auto;font-size: 0.14rem;}
+html{font-size: 100px;}
+.fl{float:left;}
+.fr{float:right;}
+
+/*个人中心*/
+.personal-top{
+	padding-top: 0.5rem;
+}
+.personal-top .head{
+	width: 30%;
+	height: 1.2rem;
+	background-color: #183765;
+	border-radius: 50%;
+	margin: 0 auto;
+	position: relative;
+	/*border: 0.08rem solid rgba(100, 97, 163, 0.5);
+	box-sizing: border-box;*/
+}
+.personal-top .head .num{
+	background-color: #ED6840;
+	color: #fff;
+	width: 0.3rem;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	border-radius: 50%;
+	position: absolute;
+	left: 70%;
+	top: 70%;
+	text-align: center;
+	font-size: 0.14rem;
+}
+.personal-top .login{
+	text-align: center;
+	font-size: 0.16rem;
+	margin: 0.02rem auto 0.08rem;
+}
+.personal-top .login a,span{
+	color: #fff;
+}
+.personal-top .score{
+	color: #fff;
+	font-size: 0.14rem;
+	text-align: center;
+}
+.personal-top .long{
+	width: 85%;
+	background-color: #fff;
+	height: 0.08rem;
+	margin: 0.02rem auto 0.05rem;
+	border-radius: 0.05rem;
+	position: relative;
+}
+.personal-top .long .half{
+	width: 50%;
+	height: 0.08rem;
+	background-color: #183765;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-radius: 0.05rem;
+}
+.personal-top .grade{
+	width: 85%;
+	margin: 0 auto;
+	font-size: 0.14rem;
+	color: #fff;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display: flex;
+	-webkit-justify-content:space-between;
+	justify-content:space-between;
+}
+.personal-btm{
+	width: 85%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.personal-btm .round .img{
+	width: 70%;
+	height: 0.72rem;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	box-sizing: border-box;
+}
+.personal-btm .round .mid{
+	margin: 0 auto;
+}
+.personal-btm .round .right{
+	margin-left: 30%;
+}
+.personal-btm .round{
+	float: left;
+	width: 33.3%;
+}
+.personal-btm .round .a{
+	background: url(../img/order.png) no-repeat;
+	background-position: center;
+	background-size: 50%;
+}
+.personal-btm .round .b{
+	background: url(../img/card.png) no-repeat;
+	background-position: center;
+	background-size: 50%;
+}
+.personal-btm .round .c{
+	background: url(../img/coupon.png) no-repeat;
+	background-position: center;
+	background-size: 50%;
+}
+.personal-btm .round .d{
+	background: url(../img/wallet.png) no-repeat;
+	background-position: center;
+	background-size: 50%;
+}
+.personal-btm .round .e{
+	background: url(../img/activity.png) no-repeat;
+	background-position: center;
+	background-size: 50%;
+}
+.personal-btm .round .f{
+	background: url(../img/day.png) no-repeat;
+	background-position: center;
+	background-size: 50%;
+}
+.personal-btm .round .txt{
+	margin-top: 0.1rem;
+	color: #fff;
+	font-size: 0.14rem;
+}
+
+/*会员登录*/
+.vip{
+	color: #fff;
+	width: 100%;
+	text-align: center;
+	font-weight: normal;
+	padding-top: 40%;
+}
+.login{
+	width: 80%;
+	margin: 15% auto 0;
+}
+.login .al{
+	width: 100%;
+	height: 0.42rem;
+	line-height: 0.42rem;
+	border: 1px solid #fff;
+	background-color: transparent;
+	margin-bottom: 10%;
+	border-radius: 5px;
+	text-indent: 0.5rem;
+	color: #fff;
+}
+.login .log{
+	background-color: #183765;
+	border: 0;
+	text-indent: 0;
+}
+.login p{
+	position: relative;
+}
+.login p i{
+	display: inline-block;
+	width: 0.32rem;
+	height: 0.32rem;
+	position: absolute;
+	left: 0.1rem;
+	top: 0.05rem;
+}
+.login p .phone{
+	background: url(../img/body.png) no-repeat;
+	background-size: 85%;
+	background-position: center;
+}
+.login p .code{
+	background: url(../img/suo.png) no-repeat;
+	background-size: 85%;
+	background-position: center;
+}
+.login p .get{
+	display: inline-block;
+	height: 0.4rem;
+	padding: 0 0.1rem;
+	line-height: 0.4rem;
+	color: #fff;
+	font-size: 0.14rem;
+	position: absolute;
+	right: 0;
+	top: 0.01rem;
+	border: 0;
+	outline: none;
+	background-color: transparent;
+}
+/*.login #btn.cur{
+	color: #999;
+}*/
+
+/*订单信息*/
+.stretch{
+	width: 100%;
+	height: 0.1rem;
+	background-color: #EBEBEB;
+}
+.orderNum{
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	font-size: 0.18rem;
+}
+.orderNum span{
+	font-weight: bold;
+	color: #333;
+}
+.orderNum .y{
+	color: #183765;
+	font-weight: bold;
+}
+.detailed{
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+	padding: 0.2rem 0;
+}
+.detailed .fl{
+	width: 28%;
+	margin-right: 4%;
+}
+.detailed .fl .img{
+	width: 100%;
+	height: 1.2rem;
+	background-color: #183765;
+}
+.detailed .fr{
+	width: 68%;
+}
+.detailed .fr h3{
+	color: #333;
+	font-size: 0.18rem;
+}
+.detailed .fr p{
+	color: #CCCCCC;
+	font-size: 0.16rem;
+	margin: 0.02rem 0;
+}
+/*订单详细信息*/
+.banner{
+	width: 100%;
+	position: relative;
+}
+.banner .rmb{
+	position: absolute;
+	left: 7%;
+	bottom: 5%;
+}
+.banner .rmb .s{
+	color: #666;
+	font-size: 0.18rem;
+}
+.banner .rmb .x{
+	color: #999;
+	font-size: 0.12rem;
+}
+.banner img{
+	width: 100%;
+}
+.detail-a,.detail-b,.detail-c{
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	padding-left: 7%;
+	padding-top: 0.3rem;
+	padding-bottom: 0.3rem;
+}
+.detail-c{
+	margin-bottom: 0.8rem;
+}
+.hid{
+	overflow: hidden;
+}
+.xi .tops{
+	margin-top: 0.1rem;
+}
+.xi .z{
+	width: 30%;
+	color: #333;
+	font-size: 0.14rem;
+}
+.xi .y{
+	width: 70%;
+	color: #999999;
+	font-size: 0.14rem;
+}
+.xi h3{
+	color: #333;
+	font-size: 0.18rem;
+}
+.xi span{
+	display: inline-block;
+	color: red;
+}
+/*确认支付*/
+.paytime{
+	width: 100%;
+	position: relative;
+}
+.paytime .time{
+	width: 25%;
+	height: 0.8rem;
+	background-color: transparent;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -12.5%;
+	margin-top: -0.4rem;
+	color: #fff;
+	text-align: center;
+}
+.paytime .time p{
+	font-size: 0.14rem;
+	margin-top: 0.2rem;
+}
+.paytime .time .rest{
+	font-size: 0.32rem;
+}
+.paytime img{
+	width: 100%;
+}
+.ispay{
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.ispay .num{
+	color: #183765;
+	font-size: 0.32rem;
+}
+.ispay .num span{
+	color: #999;
+	font-size: 0.12rem;
+}
+.ispay .sure{
+	background-color: #183765;
+	color: #fff;
+	padding: 0.02rem 0.25rem;
+	font-size: 0.12rem;
+	margin-top: 0.15rem;
+}
+.prompts{
+	width: 90%;
+	background-color: #EBEBEB;
+	padding: 0.2rem 5%;
+	color: #999999;
+}
+.prompts h2{
+	font-size: 0.18rem;
+}
+.prompts p{
+	font-size: 0.12rem;
+}
+.way{
+	width: 90%;
+	margin: 0.3rem auto;
+}
+.way li{
+	border-bottom: 1px solid #ccc;
+	width: 100%;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	color: #333;
+	font-size: 0.16rem;
+	position: relative;
+}
+.way li i{
+	display: inline-block;
+	width: 0.22rem;
+	height: 0.22rem;
+	position: absolute;
+	right: 0;
+	top: 0.09rem;
+	background: url(../img/no.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: 9;
+}
+.way li input{
+	position: absolute;
+	right: 0;
+	top: 0.12rem;
+	display: inline-block;
+	width: 0.22rem;
+	height: 0.22rem;
+	z-index: 10;
+	opacity: 0;
+}
+.way li input:checked + i{
+	background: url(../img/yes.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+/* 选座购票 */
+.sit-wrap{
+	width: 85%;
+	margin: 0.2rem auto 0;
+}
+.sit-wrap .left{
+	width: 7%;
+	margin-right: 8%;
+	background-color: #183765;
+	border-radius: 0.3rem;
+	text-align: center;
+	color: #fff;
+}
+.sit-wrap .left li{
+	margin: 0.25rem 0;
+}
+.sit-wrap .right{
+	width: 85%;
+}
+.sit-wrap .right ul  li{
+	margin: 0.2rem 0;
+	position: relative;
+}
+.sit-wrap .right ul input{
+	width: 8%;
+	height: 0.2rem;
+	position: absolute;
+	z-index: 20;
+	opacity: 0;
+}
+.sit-wrap .right ul .sit-a input{
+	top: 0.03rem;
+}
+.sit-wrap .right ul .sit-b input{
+	top: 0.43rem;
+}
+.sit-wrap .right ul .sit-c input{
+	top: 0.85rem;
+}
+.sit-wrap .right ul i{
+	display: inline-block;
+	width: 8%;
+	height: 0.2rem;
+	position: absolute;
+	top: 0;
+	z-index: 10;
+	background: url(../img/c.png) no-repeat;
+	background-position: center;
+	background-size: 90%;
+}
+.sit-wrap .right ul .sit-a i{
+	top: 0.03rem;
+}
+.sit-wrap .right ul .sit-b i{
+	top: 0.43rem;
+}
+.sit-wrap .right ul .sit-c i{
+	top: 0.85rem
+}
+
+.sit-wrap .right li .a{
+	left: 0;
+}
+.sit-wrap .right li .b{
+	left: 10%;
+}
+.sit-wrap .right li .c{
+	left: 20%;
+}
+.sit-wrap .right li .d{
+	left: 30%;
+}
+.sit-wrap .right li .e{
+	left: 40%;
+}
+.sit-wrap .right li .f{
+	left: 50%;
+}
+.sit-wrap .right li .g{
+	left: 60%;
+}
+.sit-wrap .right li .h{
+	left: 70%;
+}
+.sit-wrap .right li .i{
+	left: 80%;
+}
+.sit-wrap .right li .j{
+	left: 90%;
+}
+
+.sit-wrap .right li input:checked + i{
+	background: url(../img/b.png) no-repeat;
+	background-position: center;
+	background-size: 90%;
+}
+
+.notes{
+	float: right;
+	margin-right: 7.5%;
+	font-size: 0.14rem;
+	margin-bottom: 0.03rem;
+}
+.notes i{
+	display: inline-block;
+	width: 0.25rem;
+	height: 0.25rem;
+	vertical-align: middle;
+}
+.notes i.can{
+	background: url(../img/c.png) no-repeat;
+	background-size: 70%;
+	background-position: center 0.02rem;
+}
+.notes i.sell{
+	background: url(../img/a.png) no-repeat;
+	background-size: 70%;
+	background-position: center 0.02rem;
+}
+.notes i.pick{
+	background: url(../img/b.png) no-repeat;
+	background-size: 70%;
+	background-position: center 0.02rem;
+}
+
+.sitOk{
+	width: 85%;
+	padding: 0 7.5%;
+	border-top: 1px solid #ccc;
+	clear: both;
+}
+.sitOk .yx{
+	color: #333;
+	font-size: 0.14rem;
+	margin: 0.1rem 0;
+}
+.sitOk .sure{
+	display: inline-block;
+	background-color: #183765;
+	width: 100%;
+	height: 0.45rem;
+	color: #fff;
+	text-align: center;
+	font-size: 0.18rem;
+	border: 0;
+	outline: none;
+	border-radius: 0.08rem;
+	margin: 0.2rem 0;
+	opacity: 0.6;
+}
+.alert{
+	width: 64%;
+	height: 0.6rem;
+	background: rgba(0,0,0,0.7);
+	color: #fff;
+	text-align: center;
+	font-size: 0.18rem;
+	line-height: 0.6rem;
+	position: fixed;
+	left: 50%;
+	top: 60%;
+	margin-left: -32%;
+	z-index: 100;
+	border-radius: 0.08rem;
+	display: none;
+}
+.sitOk .addSit{
+	width: 100%;
+	overflow: hidden;
+}
+.sitOk .addSit div{
+	width: 23%;
+	height: 0.35rem;
+	line-height: 0.35rem;
+	border: 1px solid #ccc;
+	position: relative;
+	float: left;
+	margin-left: 1%;
+	margin-bottom: 0.1rem;
+}
+.sitOk .addSit div i{
+	display: inline-block;
+	width: 0.2rem;
+	height: 0.2rem;
+	background: url(../img/close.png) no-repeat;
+	background-size: 85%;
+	background-position: center;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -0.1rem;
+}
+/*查看详情*/
+.view-tit{
+	width: 90%;
+	margin: 0 auto;
+	border-bottom: 1px solid #ccc;
+	padding: 0.3rem 0;
+}
+.view-tit h1{
+	color: #333;
+	font-size: 0.3rem;
+}
+.view-tit p{
+	color: #888;
+	font-size: 0.18rem;
+	margin-top: 0.06rem;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.star{
+	width: 90%;
+	margin: 0 auto;
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+	padding-bottom: 0.1rem;
+}
+.star .fl{
+	width: 75%;
+	margin-right: 5%;
+}
+.star .fr{
+	width: 20%;
+}
+.star .fr .head{
+	width: 100%;
+	height: 0.7rem;
+	background-color: #ccc;
+	border-radius: 50%;
+	margin-top: 0.1rem;
+}
+.star .fl li{
+	margin: 0.15rem 0;
+	font-size: 0.16rem;
+	color: #333;
+}
+.Show,.need,.evaluate,.guess{
+	width: 90%;
+	margin: 0 auto;
+	border-bottom: 1px solid #ccc;
+}
+.Show .title,.need .title,.evaluate .title,.guess .title{
+	font-size: 0.18rem;
+	color: #333;
+	font-weight: bold;
+	position: relative;
+	margin: 0.2rem 0;
+}
+.title a{
+	color: #183765;
+	font-size: 0.14rem;
+	display: inline-block;
+	position: absolute;
+	right: 0;
+}
+.Show p{
+	font-size: 0.16rem;
+	color: #333;
+	margin-bottom: 0.2rem;
+}
+.need p{
+	color: #333;
+	font-size: 0.16rem;
+}
+.need{
+	padding-bottom: 0.2rem;
+}
+.evaluate{
+	padding-bottom: 0.2rem;
+}
+.evaluate p{
+	color: #333;
+	font-size: 0.16rem;
+}
+.ticketPrice{
+	width: 90%;
+	margin: 0 auto 0.5rem;
+	padding-top: 0.1rem;
+}
+.ticketPrice .price{
+	color: #183765;
+	font-size: 0.3rem;
+	width: 65%;
+}
+.ticketPrice span{
+	color: #ccc;
+	font-size: 0.12rem;
+}
+.ticketPrice .btn{
+	width: 35%;
+	height: 0.26rem;
+	line-height: 0.26rem;
+	background-color: #183765;
+	color: #fff;
+	font-size: 0.14rem;
+	text-align: center;
+	margin-top: 0.05rem;
+}
+.ticketPrice a{
+	color: #fff;
+}
+.guess .swiper-container {
+      width: 100%;
+      height: 3rem;
+      margin-bottom: 0.25rem;
+    }
+.guess .swiper-slide {
+      text-align: left;
+      background: #fff;
+    }
+
+.guess .ad{
+	width: 100%;
+	height: 80%;
+	background-color: #183765;
+}
+.guess .swiper-slide p{
+	font-size: 0.16rem;
+	color: #333;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	margin: 0.05rem 0;
+}
+.guess .swiper-slide .info{
+	font-size: 0.12rem;
+	color: #333;
+	line-height: 0.15rem;
+}
+/*订单确认*/
+.Consignee,.goods{
+	width: 80%;
+	border-bottom: 1px solid #ccc;
+	padding: 0.2rem 13% 0.2rem 7%;
+}
+.infoLeft{
+	width: 37%;
+	color: #333;
+}
+.infoRight{
+	width: 63%;
+	color: #999;
+}
+.huo h3{
+	color: #333;
+}
+.huo li{
+	margin-top: 0.1rem;
+	font-size: 0.14rem;
+}
+.huo li input{
+	width: 100%;
+	border: 1px solid #ccc;
+	border-width: 0 0 1px 0;
+	color: #999;
+} 
+.huo input::-webkit-input-placeholder{
+	color: #999;
+}
+.film{
+	width: 86%;
+	padding: 0 7%;
+	border-bottom: 1px solid #ccc;
+}
+.film .tit{
+	font-size: 0.16rem;
+	color: #333;
+	font-weight: bold;
+	position: relative;
+	margin-top: 0.2rem;
+}
+.film .tit a{
+	color: #183765;
+	font-size: 0.12rem;
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 0.01rem;
+}
+.film .Left{
+	width: 35%;
+}
+.film .Right{
+	width: 65%;
+}
+.film .Left .pic{
+	width: 60%;
+	height: 0.8rem;
+	background-color: #183765;
+}
+.film .package-a{
+	border-bottom: 1px solid #ccc;
+	padding: 0.1rem 0;
+}
+.film .Right .right-a{
+	font-size: 0.16rem;
+	color: #333;
+	font-weight: bold;
+	position: relative;
+}
+.film .Right .right-a .count{
+	position: absolute;
+	right: 0;
+	top: 0;
+	overflow: hidden;
+	color: #333;
+	font-size: 0.16rem;
+}
+.film .Right .count span{
+	display: inline-block;
+	width: 0.2rem;
+	height: 0.2rem;
+	line-height: 0.2rem;
+	border: 1px solid #ccc;
+	float: left;
+	color: #333;
+	text-align: center;
+}
+.film .Right .count input{
+	width: 0.3rem;
+	height: 0.2rem;
+	border: 1px solid #ccc;
+	border-width: 1px 0;
+	float: left;
+	display: inline-block;
+	color: #333;
+	text-align: center;
+}
+.film .Right .right-b{
+	color: #999;
+	font-size: 0.14rem;
+	margin: 0.05rem 0 0.2rem 0;
+}
+.film .Right .right-c .fl{
+	font-size: 0.18rem;
+	color: #183765;
+}
+.film .Right .right-c .fl span{
+	color: #183765;
+	font-size: 0.18rem;
+}
+.film .Right .right-c .fr{
+	font-size: 0.12rem;
+	color: #999;
+}
+.film .btmLine{
+	border-bottom: 0;
+}
+.referTo{
+	width: 86%;
+	margin: 0 auto 0.3rem;
+	padding-top: 0.2rem;
+}
+.referTo .fl{
+	color: #183765;
+    font-size: 0.28rem;
+    width: 70%;
+}
+.referTo .fl span{
+	font-size: 0.12rem;
+	color: #999;
+}
+.referTo .fr{
+	width: 30%;
+}
+.referTo .fr input{
+	width: 100%;
+	 height: 0.26rem;
+    line-height: 0.26rem;
+    background-color: #183765;
+    color: #fff;
+    font-size: 0.14rem;
+    text-align: center;
+    margin-top: 0.05rem;
+    border-width: 0;
+    outline: none;
+}

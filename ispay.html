@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+	<meta name="applicable-device" content="mobile">
+	<title>确认支付</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="paytime">
+		<img src="img/pay-bg.png" alt="">
+		<div class="time">
+			<p>支付剩余时间</p>
+			<div class="rest" id="clock">30:00</div>
+		</div>
+	</div>
+	<ul class="way">
+		<li><label for="wei">微信支付</label><input type="radio" name="pay" id="wei" checked=""><i></i></li>
+		<li><label for="bao">支付宝支付</label><input type="radio" name="pay" id="bao"><i></i></li>
+		<li><label for="yin">银行卡支付</label><input type="radio" name="pay" id="yin"><i></i></li>
+	</ul>
+	<div class="prompts">
+		<h2>温馨提示</h2>
+		<p>演出票为特殊票品，售出后不可退换，请确认后购买。请在30分钟内完成支付，否则系统将自动取消订单。</p>
+	</div>
+	<div class="ispay">
+		<div class="num fl">￥1380.00<span>应付金额</span></div>
+		<div class="sure fr">确认支付</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script>
+   	var x = 29,
+    interval;
+    window.onload = function() {
+        var d = new Date("1111/1/1,0:" + x + ":59");
+        console.log(d);
+        interval = setInterval(function() {
+            var m = d.getMinutes();
+            var s = d.getSeconds();
+            m = m < 10 ? "0" + m : m;
+            s = s < 10 ? "0" + s : s;
+            clock.innerHTML = m + ":" + s;
+            if (m == 0 && s == 0) {
+                clearInterval(interval);
+                return;
+            }
+            d.setSeconds(s - 1);
+        }, 1000);
+    }
+</script>
+</html>
