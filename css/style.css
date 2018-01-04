@@ -592,6 +592,7 @@ html{font-size: 100px;}
 	float: left;
 	margin-left: 1%;
 	margin-bottom: 0.1rem;
+	text-indent: 2%;
 }
 .sitOk .addSit div i{
 	display: inline-block;
