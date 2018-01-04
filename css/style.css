@@ -345,6 +345,7 @@ html{font-size: 100px;}
 	width: 90%;
 	margin: 0 auto;
 	overflow: hidden;
+	margin-bottom: 0.5rem;
 }
 .ispay .num{
 	color: #183765;
