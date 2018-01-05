@@ -63,21 +63,21 @@ $(function(){
 			alert('验证码不能为空！');
 			return false;
 		}
-
-		$.ajax({
-			type : "post",
-			url : " ",
-			data : {
-				"phone": phone, 
-				"code": code,
-			},
-			success : function(data) {
-				// window.laction.href = "";
-			},
-			error : function() {
-				// alert("页面出错！");
-			}
-		});
+		window.location.href = "personal.html";
+		// $.ajax({
+		// 	type : "post",
+		// 	url : " ",
+		// 	data : {
+		// 		"phone": phone, 
+		// 		"code": code,
+		// 	},
+		// 	success : function(data) {
+		// 		// window.location.href = "";
+		// 	},
+		// 	error : function() {
+		// 		// alert("页面出错！");
+		// 	}
+		// });
 
 	})
 
@@ -104,26 +104,27 @@ $(function(){
 			alert('请输入详细地址！');
 			return false;
 		}
+		window.location.href = "ispay.html";
 			
-		$.ajax({
-			type : "post",
-			url : " ",
-			data : {
-				"name": name,
-				"phone": phone, 
-				"addr": addr,
-			},
-			success : function(data) {
-				if(data=='true'){  //如果信息合法就跳转页面
-					window.laction.href = "ispay.html";
-				}else{
-					alert("信息不合法！");
-				}
-			},
-			error : function() {
+		// $.ajax({
+		// 	type : "post",
+		// 	url : " ",
+		// 	data : {
+		// 		"name": name,
+		// 		"phone": phone, 
+		// 		"addr": addr,
+		// 	},
+		// 	success : function(data) {
+		// 		if(data=='true'){  //如果信息合法就跳转页面
+		// 			window.location.href = "ispay.html";
+		// 		}else{
+		// 			alert("信息不合法！");
+		// 		}
+		// 	},
+		// 	error : function() {
 				
-			}
-		});
+		// 	}
+		// });
 
 
 	})
@@ -202,5 +203,9 @@ $(function(){
     }
 
     select();
+
+    $('.before .sure').click(function(){
+    	window.location.href = "orderConfirm.html";
+    })
 
 });
