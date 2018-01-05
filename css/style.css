@@ -288,7 +288,7 @@ html{font-size: 100px;}
 	padding-bottom: 0.3rem;
 }
 .detail-c{
-	margin-bottom: 0.8rem;
+	border-bottom: 0;
 }
 .hid{
 	overflow: hidden;
