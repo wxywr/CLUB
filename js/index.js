@@ -140,7 +140,7 @@ $(function(){
 
     $(".row").each(function(){
         $(this).click(function(){
-            
+
             if($(".row:checked").length > 4){
             	$('.alert').fadeIn().delay(1500).fadeOut();
             	return false;
@@ -149,12 +149,19 @@ $(function(){
             if(!$("input[type='checkbox']").is(':checked')){  
 		    	$('.before .sure').attr('disabled',true).css('opacity','0.6'); 
 		    	$('.before .sure').val('请先选座');
+		    	// $('.before span').css('visibility','hidden');
 			}else{  
 			    $('.before .sure').attr('disabled',false).css('opacity','1'); 
 			    $('.before .sure').val('确认选座');
+			    // $('.before span').css('visibility','visible');
 			} 
 
+			var size = $(".row:checked").length;
+        	$('.before .many').text(size);
+
             wInput();
+
+            total()
         });
     });
 
@@ -170,14 +177,33 @@ $(function(){
                 if(!$("input[type='checkbox']").is(':checked')){  
 		    		$('.before .sure').attr('disabled',true).css('opacity','0.6'); 
 		    		$('.before .sure').val('请先选座');
+		    		// $('.before span').css('visibility','hidden');
 				}else{  
 			    	$('.before .sure').attr('disabled',false).css('opacity','1'); 
 			    	$('.before .sure').val('确认选座');
+			    	// $('.before span').css('visibility','visible');
 				} 
+
+				var size = $(".row:checked").length;
+        		$('.before .many').text(size);
+
+        		total()
+
             })
         })
     }
 
     wInput();
+
+
+// 购票总钱数
+    function total(){
+    	var size = $(".row:checked").length;
+   	 	var p = Number($('.before .dj').html());
+   	 	var all = p*size;
+   	 	$('.before big').text(all);
+    }
+
+    total()
 
 });
