@@ -147,11 +147,11 @@ $(function(){
             }
 
             if(!$("input[type='checkbox']").is(':checked')){  
-		    	$('.sitOk .sure').attr('disabled',true).css('opacity','0.6'); 
-		    	$('.sitOk .sure').val('请先选座');
+		    	$('.before .sure').attr('disabled',true).css('opacity','0.6'); 
+		    	$('.before .sure').val('请先选座');
 			}else{  
-			    $('.sitOk .sure').attr('disabled',false).css('opacity','1'); 
-			    $('.sitOk .sure').val('¥1380 确认选座');
+			    $('.before .sure').attr('disabled',false).css('opacity','1'); 
+			    $('.before .sure').val('确认选座');
 			} 
 
             wInput();
@@ -166,6 +166,14 @@ $(function(){
                  $("#site_"+ids[1]).prop("checked",false);
 
                 $(this).parent().remove();
+
+                if(!$("input[type='checkbox']").is(':checked')){  
+		    		$('.before .sure').attr('disabled',true).css('opacity','0.6'); 
+		    		$('.before .sure').val('请先选座');
+				}else{  
+			    	$('.before .sure').attr('disabled',false).css('opacity','1'); 
+			    	$('.before .sure').val('确认选座');
+				} 
             })
         })
     }

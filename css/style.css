@@ -343,9 +343,8 @@ html{font-size: 100px;}
 }
 .ispay{
 	width: 90%;
-	margin: 0 auto;
+	margin: 0.1rem auto 0.5rem;
 	overflow: hidden;
-	margin-bottom: 0.5rem;
 }
 .ispay .num{
 	color: #183765;
@@ -358,9 +357,8 @@ html{font-size: 100px;}
 .ispay .sure{
 	background-color: #183765;
 	color: #fff;
-	padding: 0.05rem 0.25rem;
-	font-size: 0.14rem;
-	margin-top: 0.07rem;
+	padding: 0.05rem 0.2rem;
+	font-size: 0.18rem;
 }
 .prompts{
 	width: 90%;
@@ -550,18 +548,29 @@ html{font-size: 100px;}
 	font-size: 0.14rem;
 	margin: 0.1rem 0;
 }
-.sitOk .sure{
+.before{
+	width: 85%;
+	margin: 0 auto;
+	margin-bottom: 0.5rem;
+}
+.before span{
+	color: #ccc;
+	font-size: 0.12rem;
+}
+.before .money{
+	color: #183765;
+	font-size: 0.32rem;
+}
+.before .sure{
 	display: inline-block;
 	background-color: #183765;
-	width: 100%;
-	height: 0.45rem;
+	width: 40%;
+	height: 0.35rem;
 	color: #fff;
 	text-align: center;
 	font-size: 0.18rem;
 	border: 0;
 	outline: none;
-	border-radius: 0.08rem;
-	margin: 0.2rem 0;
 	opacity: 0.6;
 }
 .alert{
@@ -692,12 +701,11 @@ html{font-size: 100px;}
 }
 .ticketPrice{
 	width: 90%;
-	margin: 0 auto 0.5rem;
-	padding-top: 0.1rem;
+	margin: 0.1rem auto 0.5rem;
 }
 .ticketPrice .price{
 	color: #183765;
-	font-size: 0.3rem;
+	font-size: 0.32rem;
 	width: 65%;
 }
 .ticketPrice span{
@@ -706,13 +714,12 @@ html{font-size: 100px;}
 }
 .ticketPrice .btn{
 	width: 35%;
-	height: 0.26rem;
-	line-height: 0.26rem;
+	height: 0.35rem;
+	line-height: 0.35rem;
 	background-color: #183765;
 	color: #fff;
-	font-size: 0.14rem;
+	font-size: 0.18rem;
 	text-align: center;
-	margin-top: 0.05rem;
 }
 .ticketPrice a{
 	color: #fff;
