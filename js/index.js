@@ -146,22 +146,14 @@ $(function(){
             	return false;
             }
 
-            if(!$("input[type='checkbox']").is(':checked')){  
-		    	$('.before .sure').attr('disabled',true).css('opacity','0.6'); 
-		    	$('.before .sure').val('请先选座');
-		    	// $('.before span').css('visibility','hidden');
-			}else{  
-			    $('.before .sure').attr('disabled',false).css('opacity','1'); 
-			    $('.before .sure').val('确认选座');
-			    // $('.before span').css('visibility','visible');
-			} 
+			select();
 
 			var size = $(".row:checked").length;
         	$('.before .many').text(size);
 
             wInput();
 
-            total()
+            total();
         });
     });
 
@@ -174,20 +166,12 @@ $(function(){
 
                 $(this).parent().remove();
 
-                if(!$("input[type='checkbox']").is(':checked')){  
-		    		$('.before .sure').attr('disabled',true).css('opacity','0.6'); 
-		    		$('.before .sure').val('请先选座');
-		    		// $('.before span').css('visibility','hidden');
-				}else{  
-			    	$('.before .sure').attr('disabled',false).css('opacity','1'); 
-			    	$('.before .sure').val('确认选座');
-			    	// $('.before span').css('visibility','visible');
-				} 
+				select();
 
 				var size = $(".row:checked").length;
         		$('.before .many').text(size);
 
-        		total()
+        		total();
 
             })
         })
@@ -196,7 +180,7 @@ $(function(){
     wInput();
 
 
-// 购票总钱数
+// 购票总价格
     function total(){
     	var size = $(".row:checked").length;
    	 	var p = Number($('.before .dj').html());
@@ -204,6 +188,19 @@ $(function(){
    	 	$('.before big').text(all);
     }
 
-    total()
+    total();
+
+//判断有没有选座
+    function select(){
+    	if(!$("input[type='checkbox']").is(':checked')){  
+    		$('.before .sure').attr('disabled',true).css('opacity','0.6'); 
+    		$('.before .sure').val('请先选座');
+		}else{  
+	    	$('.before .sure').attr('disabled',false).css('opacity','1'); 
+	    	$('.before .sure').val('确认选座');
+		} 
+    }
+
+    select();
 
 });
