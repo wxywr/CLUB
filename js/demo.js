@@ -32,7 +32,8 @@ $(function(){
 		slidesPerView: 1,
 		centeredSlides: true,
 		autoplay: {
-		    delay: 5000,//5秒切换一次
+		    delay: 6000,//5秒切换一次
+		    disableOnInteraction: false,
 		},
 		pagination: {
 			el: '.swiper-pagination',
