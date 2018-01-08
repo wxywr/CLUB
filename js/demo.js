@@ -32,7 +32,7 @@ $(function(){
 		slidesPerView: 1,
 		centeredSlides: true,
 		autoplay: {
-		    delay: 6000,//5秒切换一次
+		    delay: 6000,
 		    disableOnInteraction: false,
 		},
 		pagination: {

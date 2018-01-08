@@ -900,3 +900,37 @@ html{font-size: 100px;}
     border-width: 0;
     outline: none;
 }
+/*查看详情*/
+h1.shows{
+	font-size: 0.18rem;
+	color: #333;
+	width: 90%;
+	margin: 0.1rem auto;
+}
+p.introduces{
+	width: 90%;
+	margin: 0 auto;
+	font-size: 0.14rem;
+	color: #333;
+	margin-bottom: 0.5rem;
+}
+h1.know{
+	font-size: 0.18rem;
+	color: #333;
+	text-align: center;
+	margin: 0.2rem auto;
+}
+.buy-all{
+	width: 90%;
+	margin: 0 auto;
+	font-size: 0.14rem;
+	margin-bottom: 0.5rem;
+}
+.buy-all .buy-tit{
+	color: #333;
+	margin-top: 0.15rem;
+}
+.buy-all .buy-txt{
+	color: #888;
+	margin-top: 0.05rem;
+}
