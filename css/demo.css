@@ -110,6 +110,8 @@ body{
 	font-size: 0.17rem;
 	padding-top:2%;
 	font-weight: 500;
+	width: 90%;
+	margin: 0 auto;
 }
 .content span{
 	font-size: 0.1rem;
@@ -119,6 +121,8 @@ body{
 	font-size: 0.16rem;
 }
 .content p{
+	width: 90%;
+	margin: 0 auto;
 	font-size: 0.13rem !important;
 }
 .content .pic1{
