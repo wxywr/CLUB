@@ -31,6 +31,9 @@ $(function(){
 	var swiper = new Swiper('.box .swiper-container', {
 		slidesPerView: 1,
 		centeredSlides: true,
+		autoplay: {
+		    delay: 5000,//5秒切换一次
+		},
 		pagination: {
 			el: '.swiper-pagination',
 			clickable: true,
