@@ -64,20 +64,22 @@ $(function(){
 			return false;
 		}
 		window.location.href = "personal.html";
-		// $.ajax({
-		// 	type : "post",
-		// 	url : " ",
-		// 	data : {
-		// 		"phone": phone, 
-		// 		"code": code,
-		// 	},
-		// 	success : function(data) {
-		// 		// window.location.href = "";
-		// 	},
-		// 	error : function() {
-		// 		// alert("页面出错！");
-		// 	}
-		// });
+		$.ajax({
+			type : "post",
+			url : " ",
+			data : {
+				"phone": phone, 
+				"code": code,
+			},
+			success : function(data) {
+				// window.location.href = "";
+			},
+			error : function() {
+
+				alert(验证码错误);
+
+			}
+		});
 
 	})
 
