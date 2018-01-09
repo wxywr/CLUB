@@ -221,3 +221,39 @@ body{
 	width:30%;
 }
 .none{display:none;}
+
+.tuij{
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+	margin-top: 0.1rem;
+}
+.tuij .fl{
+	width: 25%;
+	float: left;
+}
+.tuij .fl img{
+	width: 100%;
+}
+.tuij .fr{
+	width: 73%;
+	float: right;
+	margin-left: 2%;
+}
+.tuij .fr .tit{
+	color: #333;
+	font-size: 0.14rem;
+}
+.tuij .fr .date{
+	color: #999;
+	font-size: 0.12rem;
+	margin: 0.06rem 0;
+}
+.tuij .fr .pri{
+	color: #999;
+	font-size: 0.12rem;
+}
+.tuij .fr .pri span{
+	color: #FD136A;
+	font-size: 0.16rem;
+}
