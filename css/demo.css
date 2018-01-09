@@ -132,7 +132,7 @@ body{
 .bottom{
 	width:40%;
 	position: absolute;
-	bottom:7%;
+	bottom:5%;
 	left:50%;
 	margin-left:-20%;
 	z-index: 9999;

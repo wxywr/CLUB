@@ -909,7 +909,8 @@ h1.shows{
 	font-size: 0.18rem;
 	color: #333;
 	width: 90%;
-	margin: 0.1rem auto;
+	margin: 0 auto;
+	padding: 0.1rem 0;
 }
 p.introduces{
 	width: 90%;
@@ -922,7 +923,8 @@ h1.know{
 	font-size: 0.18rem;
 	color: #333;
 	text-align: center;
-	margin: 0.2rem auto;
+	margin: 0 auto;
+	padding-top: 0.2rem;
 }
 .buy-all{
 	width: 90%;
