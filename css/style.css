@@ -940,3 +940,31 @@ h1.know{
 	color: #888;
 	margin-top: 0.05rem;
 }
+/*优惠券*/
+.coupon-tit{
+	width: 100%;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	border: 1px solid #ccc;
+	border-width: 1px 0;
+	display: -webkit-flex;
+    display: flex;
+    text-align: center;
+}
+.coupon-tit li{
+	flex-grow: 1;
+	font-size: 0.16rem;
+}
+.coupon-tit li.on{
+	border-bottom: 2px solid #183765;
+	color: #183765;
+}
+.coupon-wrap .hide{
+	display: none;
+}
+.coupon-wrap p{
+	text-align: center;
+	color: #333;
+	font-size: 0.16rem;
+	margin-top: 3rem;
+}

@@ -210,4 +210,18 @@ $(function(){
     	window.location.href = "orderConfirm.html";
     })
 
+
+    // 优惠券切换
+	var n=0;
+	$('.coupon-tit li').click(function(){
+		var index = $(this).index();
+		n=index;
+		tab();
+	})
+	function tab(){
+		$('.coupon-tit li').eq(n).addClass('on').siblings().removeClass('on');
+		$('.coupon-wrap div').eq(n).css('display','block').siblings().css('display','none'); 
+	}
+
+
 });
