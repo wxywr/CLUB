@@ -653,9 +653,15 @@ html{font-size: 100px;}
 .star .fr .head{
 	width: 100%;
 	height: 0.7rem;
-	background-color: #ccc;
 	border-radius: 50%;
 	margin-top: 0.1rem;
+}
+.star .fr .head a{
+	color: #183765;
+    font-size: 0.14rem;
+}
+.star .fr .head img{
+	width: 100%;
 }
 .star .fl li{
 	margin: 0.15rem 0;
@@ -967,4 +973,27 @@ h1.know{
 	color: #333;
 	font-size: 0.16rem;
 	margin-top: 3rem;
+}
+/*艺人信息*/
+.star-head{
+	width: 100%;
+}
+.star-head img{
+	width: 100%;
+}
+.star-tit{
+	width: 90%;
+	margin: 0 auto;
+	font-size: 0.16rem;
+	color: #333;
+	margin-top: 0.15rem;
+}
+.star-info{
+	width: 90%;
+	margin: 0 auto;
+	font-size: 0.14rem;
+	color: #4d4d4d;
+	margin-top: 0.1rem;
+	margin-bottom: 0.5rem;
+	text-align: justify;
 }
