@@ -1058,3 +1058,48 @@ h1.know{
 	font-size: 0.22rem;
 	padding: 0.1rem 0;
 }
+/*我的钱包*/
+.wallet{
+	width: 100%;
+	background-color: #183765;
+	height: 2.5rem;
+	text-align: center;
+}
+.wallet .none{
+	width: 100%;
+	height: 0.8rem;
+}
+.wallet h1{
+	font-size: 0.5rem;
+	color: #fff;
+}
+.wallet p{
+	color: #fff;
+	font-size: 0.14rem;
+}
+.wallet-num{
+	width: 100%;
+	border-bottom: 0.1rem solid #eee;	
+	text-align: center;
+	padding: 0.2rem 0;
+}
+.wallet-num .num{
+	color: 333;	
+	font-size: 0.2rem;
+}
+.wallet-num .balance{
+	color: #888;
+	font-size: 0.16rem;
+}
+.recharge{
+	width: 80%;
+	margin: 0 auto;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	background-color: #183765;
+	text-align: center;
+	color: #fff;
+	font-size: 0.14rem;
+	border-radius: 0.2rem;
+	margin-top: 1rem;
+}
