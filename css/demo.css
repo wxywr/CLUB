@@ -25,7 +25,7 @@ body{
 	text-indent: 26%;
 }
 .logo{
-	width:9%;
+	width:6%;
 	display: block;
 	position: absolute;
 	top:2%;
@@ -59,7 +59,8 @@ body{
 	transition:0.3s;
 }
 .btn1{
-	width:7.5%;
+	/*width:7.5%;*/
+	width: 10%;
 	z-index: 10;
 }
 .btn2{

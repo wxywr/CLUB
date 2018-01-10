@@ -6,26 +6,26 @@ $(function(){
 	
 	$('body').css('overflow-x','hidden');
 	// 缩小
-	$('.btn1 img').bind('click',function(){
-		$('.mask').addClass('mask-css3');
-		$('.wrap').addClass('wrap-css3');
-		$('.logo').addClass('logo-css3');
-		$('.btn2').addClass('btn2-css3');
-		$('.btn1').addClass('btn1-css3');
-		$('.swiper-pagination').addClass('none');
-		$('.bottom').addClass('none');
-	})
+	// $('.btn1 img').bind('click',function(){
+	// 	$('.mask').addClass('mask-css3');
+	// 	$('.wrap').addClass('wrap-css3');
+	// 	$('.logo').addClass('logo-css3');
+	// 	$('.btn2').addClass('btn2-css3');
+	// 	$('.btn1').addClass('btn1-css3');
+	// 	$('.swiper-pagination').addClass('none');
+	// 	$('.bottom').addClass('none');
+	// })
 
-	// 放大
-	$('.btn2').bind('click',function(){
-		$('.mask').removeClass('mask-css3');
-		$('.wrap').removeClass('wrap-css3');
-		$('.logo').removeClass('logo-css3');
-		$('.btn2').removeClass('btn2-css3');
-		$('.btn1').removeClass('btn1-css3');
-		$('.swiper-pagination').removeClass('none');
-		$('.bottom').removeClass('none');
-	})
+	// // 放大
+	// $('.btn2').bind('click',function(){
+	// 	$('.mask').removeClass('mask-css3');
+	// 	$('.wrap').removeClass('wrap-css3');
+	// 	$('.logo').removeClass('logo-css3');
+	// 	$('.btn2').removeClass('btn2-css3');
+	// 	$('.btn1').removeClass('btn1-css3');
+	// 	$('.swiper-pagination').removeClass('none');
+	// 	$('.bottom').removeClass('none');
+	// })
 
 
 	var swiper = new Swiper('.box .swiper-container', {
