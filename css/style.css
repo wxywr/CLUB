@@ -997,3 +997,64 @@ h1.know{
 	margin-bottom: 0.5rem;
 	text-align: justify;
 }
+/*电子会员卡*/
+.ka{
+	width: 90%;
+	margin: 0.2rem auto;
+	background-color: #183765;
+	height: 1.9rem;
+	border-radius: 0.1rem;
+}
+.jif{
+	width: 90%;
+	margin: 0 auto;
+}
+.jif .fl,.jif .fr{
+	width: 50%;
+	text-align: center;
+}
+.jif .fl{
+	border-right: 1px solid #ccc;
+	box-sizing: border-box; 
+}
+.jif .top{
+	font-size: 0.14rem;
+	color: #333;
+}
+.jif .btm{
+	font-size: 0.18rem;
+	color: #183765;
+}
+.exchange{
+	width: 40%;
+	height: 0.45rem;
+	line-height: 0.45rem;
+	color: #183765;
+	font-size: 0.16rem;
+	background-color: #fff;
+	border: 1px solid #183765;
+	margin: 0 auto;
+	text-align: center;
+	border-radius: 0.05rem;
+	margin-top: 0.3rem;
+}
+/*我的活动*/
+.activity{
+	width: 90%;
+	margin: 0 auto;
+}
+.activity li{
+	width: 100%;
+	margin: 0 auto;
+	height: 1rem;
+	margin-top: 0.15rem;
+	border-radius: 0.1rem;
+	box-shadow:0px 0px 10px #ccc;
+}
+.activ-tit{
+	color: #333;
+	width: 90%;
+	margin: 0 auto;
+	font-size: 0.22rem;
+	padding: 0.1rem 0;
+}
