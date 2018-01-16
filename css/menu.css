@@ -61,3 +61,8 @@
 .selected-style {
 	border:2px solid #213762;
 }
+
+
+.current-month:nth-child(28)>span,.current-month:nth-child(21)>span,.current-month:nth-child(18)>span,.current-month:nth-child(24)>span{
+	border: 2px solid #213762;
+}

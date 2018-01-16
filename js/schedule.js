@@ -28,10 +28,11 @@
 			day = curDate.getDate(),	
 			currentYear = curDate.getFullYear(),
 			currentMonth = curDate.getMonth(),
-			currentDay = curDate.getDate(),
+			currentDay = curDate.getDate(),	
 			selectedDate = '',
 			el = document.querySelector(opt.el) || document.querySelector('body'),
 			_this = this;
+
 		var bindEvent = function (){
 			el.addEventListener('click',function(e){
 				switch (e.target.id) {
@@ -149,4 +150,5 @@
 	}else {
 		!('Schedule' in _global) && (_global.Schedule = Schedule);
 	}
+
 }());
