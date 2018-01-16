@@ -106,27 +106,23 @@ $(function(){
 			alert('请输入详细地址！');
 			return false;
 		}
-		// window.location.href = "ispay.html";
+		window.location.href = "ispay.html";
 			
-		$.ajax({
-			type : "post",
-			url : " ",
-			data : {
-				"name": name,
-				"phone": phone, 
-				"addr": addr,
-			},
-			success : function(data) {
-				// if(data=='true'){  //如果信息合法就跳转页面
-					window.location.href = "ispay.html";
-				// }else{
-				// 	alert("信息不合法！");
-				// }
-			},
-			error : function() {
+		// $.ajax({
+		// 	type : "post",
+		// 	url : " ",
+		// 	data : {
+		// 		"name": name,
+		// 		"phone": phone, 
+		// 		"addr": addr,
+		// 	},
+		// 	success : function(data) {
+		// 		window.location.href = "ispay.html";
+		// 	},
+		// 	error : function() {
 				
-			}
-		});
+		// 	}
+		// });
 
 
 	})
